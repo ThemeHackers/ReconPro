@@ -49,6 +49,12 @@ ReconPro is a specialized web reconnaissance tool designed for cybersecurity pro
 | SQLi Checks   | 3 dorks | Identifies SQL injection points |
 | Subdomains    | 3 dorks | Discovers subdomains |
 
+## 🤝 Contributing
+We welcome dork submissions and improvements!
+1. Fork the repository
+2. Add new dorks to dorkDatabase in script.js
+3. Submit a pull request
+
 ## 🗃️ Dork Database
 Structured with:
 ```javascript
@@ -66,14 +72,8 @@ Structured with:
 ## ⚠️ Ethical Guidelines
 ReconPro must only be used on systems you own or have explicit permission to test. Users are responsible for complying with all applicable laws and terms of service.
 
-## 🤝 Contributing
-We welcome dork submissions and improvements!
-1. Fork the repository
-2. Add new dorks to dorkDatabase in index.html
-3. Submit a pull request
-
 ## 📜 License
 [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ---------------
-Made with ❤️ by [Shafayat Ahmed Alif](https://https://www.linkedin.com/in/iamshafayat/) for Security Researchers
+Made with ❤️ by [Shafayat Ahmed Alif](https://www.linkedin.com/in/iamshafayat/) for Security Researchers
