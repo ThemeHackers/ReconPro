@@ -1,4 +1,4 @@
-# 🔍 ReconPro - Advanced Bug Bounty Reconnaissance Toolkit
+# 🔍 ReconPro - Ultimate Google Dorking Tool for Bug Bounty & Pentesting
 ![ReconPro Interface Screenshot](Screenshot.png)
 
 ## 🌟 Live Demo
