@@ -1,7 +1,7 @@
 # 🔍 ReconPro - Ultimate Google Dorking Tool for Bug Bounty & Pentesting
 ![ReconPro Interface Screenshot](Screenshot.png)
 
-## 🌟 Live Demo
+## 🌟 Live
 ➡️ **Use ReconPro Now: [https://iamshafayat.github.io/ReconPro/](https://iamshafayat.github.io/ReconPro/)**
 
 
