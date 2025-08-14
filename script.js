@@ -7,7 +7,7 @@
             3: { name: "Database Files", dork: "ext:sql | ext:dbf | ext:mdb", category: "File Exposure", risk: "critical", description: "Locate database files" },
             4: { name: "Log Files", dork: "ext:log", category: "File Exposure", risk: "high", description: "Find log files" },
             5: { name: "Backup Files", dork: "ext:bkf | ext:bkp | ext:bak | ext:old | ext:backup", category: "File Exposure", risk: "high", description: "Locate backup files" },
-            6: { name: "Login Pages", dork: "inurl:login", category: "Web Applications", risk: "low", description: "Find login pages" },
+            6: { name: "Login Pages", dork: 'site:*.* intext:"login" | intitle:"login" | inurl:"login" | intext:"username" | intitle:"username" | inurl:"username" | intext:"password" | intitle:"password" | inurl:"password"', category: "Web Applications", risk: "low", description: "Find login pages" },
             7: { name: "SQL Errors", dork: 'intext:"sql syntax near" | intext:"syntax error has occurred" | intext:"incorrect syntax near" | intext:"unexpected end of SQL command" | intext:"Warning: mysql_connect()" | intext:"Warning: mysql_query()" | intext:"Warning: pg_connect()"', category: "Web Applications", risk: "high", description: "Find SQL errors" },
             8: { name: "Exposed Documents", dork: "ext:doc | ext:docx | ext:odt | ext:pdf | ext:rtf | ext:sxw | ext:psw | ext:ppt | ext:pptx | ext:pps | ext:csv", category: "File Exposure", risk: "medium", description: "Find exposed documents" },
             9: { name: "phpinfo()", dork: 'ext:php intitle:phpinfo "published by the PHP Group"', category: "Web Applications", risk: "high", description: "Find phpinfo() pages" },
@@ -519,4 +519,5 @@
         }
 
         // Start the app
+
         document.addEventListener('DOMContentLoaded', init);
