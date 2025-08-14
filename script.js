@@ -7,7 +7,7 @@
             3: { name: "Database Files", dork: "ext:sql | ext:dbf | ext:mdb", category: "File Exposure", risk: "critical", description: "Locate database files" },
             4: { name: "Log Files", dork: "ext:log", category: "File Exposure", risk: "high", description: "Find log files" },
             5: { name: "Backup Files", dork: "ext:bkf | ext:bkp | ext:bak | ext:old | ext:backup", category: "File Exposure", risk: "high", description: "Locate backup files" },
-            6: { name: "Login Pages", dork: 'site:*.* intext:"login" | intitle:"login" | inurl:"login" | intext:"username" | intitle:"username" | inurl:"username" | intext:"password" | intitle:"password" | inurl:"password"', category: "Web Applications", risk: "low", description: "Find login pages" },
+            6: { name: "Login Pages", dork: 'intext:"login" | intitle:"login" | inurl:"login" | intext:"username" | intitle:"username" | inurl:"username" | intext:"password" | intitle:"password" | inurl:"password"', category: "Web Applications", risk: "low", description: "Find login pages" },
             7: { name: "SQL Errors", dork: 'intext:"sql syntax near" | intext:"syntax error has occurred" | intext:"incorrect syntax near" | intext:"unexpected end of SQL command" | intext:"Warning: mysql_connect()" | intext:"Warning: mysql_query()" | intext:"Warning: pg_connect()"', category: "Web Applications", risk: "high", description: "Find SQL errors" },
             8: { name: "Exposed Documents", dork: "ext:doc | ext:docx | ext:odt | ext:pdf | ext:rtf | ext:sxw | ext:psw | ext:ppt | ext:pptx | ext:pps | ext:csv", category: "File Exposure", risk: "medium", description: "Find exposed documents" },
             9: { name: "phpinfo()", dork: 'ext:php intitle:phpinfo "published by the PHP Group"', category: "Web Applications", risk: "high", description: "Find phpinfo() pages" },
@@ -65,7 +65,9 @@
             61: { name: "Docker-Compose", dork: 'intitle:"index of" "docker-compose.yml"', category: "File Exposure", risk: "high", description: "Find docker-compose" },
             62: { name: "pom.xml", dork: 'intext:"Index of" intext:"pom.xml"', category: "File Exposure", risk: "medium", description: "Find pom.xml" },
             63: { name: "/etc", dork: 'intext:"Index of" intext:"/etc"', category: "File Exposure", risk: "critical", description: "Find /etc dirs" },
-            64: { name: "SQL Directories", dork: '"sql" "parent" intitle:index.of -injection', category: "File Exposure", risk: "high", description: "Find SQL dirs" }
+            64: { name: "SQL Directories", dork: '"sql" "parent" intitle:index.of -injection', category: "File Exposure", risk: "high", description: "Find SQL dirs" },
+            65: { name: "API Endpoints", dork: 'inurl:api | site:*/rest | site:*/v1 | site:*/v2 | site:*/v3', category: "API Exposure", risk: "medium", description: "Find exposed API endpoints" },
+            66: { name: "API Documentation", dork: 'inurl:apidocs | inurl:api-docs | inurl:swagger | inurl:api-explorer', category: "API Exposure", risk: "low", description: "Find API documentation portals" }
         };
 
         // ======================
@@ -521,3 +523,4 @@
         // Start the app
 
         document.addEventListener('DOMContentLoaded', init);
+
