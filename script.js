@@ -1,5 +1,5 @@
         // ======================
-        // 1. COMPLETE DORK DATABASE (64 WORKING DORKS)
+        // 1. COMPLETE DORK DATABASE
         // ======================
         const dorkDatabase = {
             1: { name: "Directory Listings", dork: "intitle:index.of", category: "File Exposure", risk: "medium", description: "Find open directory listings" },
