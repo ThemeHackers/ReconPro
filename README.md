@@ -52,7 +52,7 @@ ReconPro is a specialized web reconnaissance tool designed for cybersecurity pro
 ## 🤝 Contributing
 We welcome dork submissions and improvements!
 1. Fork the repository
-2. Add new dorks to dorkDatabase in script.js
+2. Add new dorks to dorkDatabase in **script.js**
 3. Submit a pull request
 
 ## 🗃️ Dork Database
