@@ -67,7 +67,8 @@
             63: { name: "/etc", dork: 'intext:"Index of" intext:"/etc"', category: "File Exposure", risk: "critical", description: "Find /etc dirs" },
             64: { name: "SQL Directories", dork: '"sql" "parent" intitle:index.of -injection', category: "File Exposure", risk: "high", description: "Find SQL dirs" },
             65: { name: "API Endpoints", dork: 'inurl:api | site:*/rest | site:*/v1 | site:*/v2 | site:*/v3', category: "API Exposure", risk: "medium", description: "Find exposed API endpoints" },
-            66: { name: "API Documentation", dork: 'inurl:apidocs | inurl:api-docs | inurl:swagger | inurl:api-explorer', category: "API Exposure", risk: "low", description: "Find API documentation portals" }
+            66: { name: "API Documentation", dork: 'inurl:apidocs | inurl:api-docs | inurl:swagger | inurl:api-explorer', category: "API Exposure", risk: "low", description: "Find API documentation portals" },
+            67: { name: "Sensitive DATA Leak", dork: '"date of birth" ext:pdf', category: "Sensitive Data Exposure", risk: "critical", description: "Find documents containing personally identifiable information (PII)" }
         };
 
         // ======================
