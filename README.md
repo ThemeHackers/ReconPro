@@ -72,8 +72,8 @@ Structured with:
 ## ⚠️ Ethical Guidelines
 ReconPro must only be used on systems you own or have explicit permission to test. Users are responsible for complying with all applicable laws and terms of service.
 
-## 📜 License
-[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+## 📝 License
+This project is licensed under the [Apache License 2.0](LICENSE).
 
 ---------------
 Made with ❤️ by [Shafayat Ahmed Alif](https://www.linkedin.com/in/iamshafayat/) for Security Researchers
