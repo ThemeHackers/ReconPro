@@ -68,7 +68,8 @@
             64: { name: "SQL Directories", dork: '"sql" "parent" intitle:index.of -injection', category: "File Exposure", risk: "high", description: "Find SQL dirs" },
             65: { name: "API Endpoints", dork: 'inurl:api | site:*/rest | site:*/v1 | site:*/v2 | site:*/v3', category: "API Exposure", risk: "medium", description: "Find exposed API endpoints" },
             66: { name: "API Documentation", dork: 'inurl:apidocs | inurl:api-docs | inurl:swagger | inurl:api-explorer', category: "API Exposure", risk: "low", description: "Find API documentation portals" },
-            67: { name: "Sensitive DATA Leak", dork: '"date of birth" ext:pdf', category: "Sensitive Data Exposure", risk: "critical", description: "Find documents containing personally identifiable information (PII)" }
+            67: { name: "Sensitive DATA Leak", dork: '"date of birth" ext:pdf', category: "Sensitive Data Exposure", risk: "critical", description: "Find documents containing personally identifiable information (PII)" },
+            68: { name: "Exposed Config & Log Files", dork: "ext:log | ext:txt | ext:conf | ext:cnf | ext:ini | ext:env | ext:sh | ext:bak | ext:backup | ext:swp | ext:old | ext:~ | ext:git | ext:svn | ext:htpasswd | ext:htaccess | ext:json", category: "File Exposure", risk: "high", description: "Find exposed configuration, log, and backup files" }
         };
 
         // ======================
@@ -524,4 +525,5 @@
         // Start the app
 
         document.addEventListener('DOMContentLoaded', init);
+
 
