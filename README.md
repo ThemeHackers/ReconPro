@@ -2,7 +2,7 @@
 ![ReconPro Interface Screenshot](Screenshot.png)
 
 ## 🌟 Live
-➡️ **Use ReconPro Now: [https://iamshafayat.github.io/ReconPro/](https://iamshafayat.github.io/ReconPro/)**
+➡️ **Use ReconPro Now: [https://reconpro.netlify.app](https://reconpro.netlify.app)**
 
 
 ## 🌟 Introduction
